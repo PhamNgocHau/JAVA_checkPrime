@@ -5,7 +5,7 @@ public class DisplayPrime {
     public static boolean isPrimeNumber(int number) {
         boolean check = false;
         int i = 2;
-        while (i < Math.sqrt(number)){
+        while (i <= Math.sqrt(number)){
             if(number % i == 0){
                 return false;
             }
@@ -18,6 +18,7 @@ public class DisplayPrime {
         System.out.println("Enter number: ");
         int number =  sc.nextInt();
         System.out.println("All Prime less than: \n");
+
 
         for (int i = 2 ; i < number ; i++){
             if(isPrimeNumber(i)){
